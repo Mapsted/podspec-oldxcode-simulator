@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
 
     s.platform          = :ios
     s.source            = { :git => "https://github.com/Mapsted/mapsted-sdk-geofence-oldxcode-simulator.git", :tag => '5.3.9' }
-    s.source_files  = "MapstedCore.framework/Headers/*.{h,m}"
+    s.source_files  = "MapstedGeofence.framework/Headers/*.{h,m}"
     s.ios.deployment_target = '13.0'
-    s.ios.vendored_frameworks = "MapstedCore.framework"
+    s.ios.vendored_frameworks = "MapstedGeofence.framework"
     s.libraries = "z", "c++"
     s.ios.framework  = 'GLKit'
     s.dependency 'mapsted-sdk-core','5.3.9'
